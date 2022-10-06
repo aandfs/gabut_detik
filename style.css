@@ -1,0 +1,154 @@
+body {
+    font-size: 16px;
+    font-family: Helvetica-FF, Arial, Tahoma, sans-serif;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.container,
+.container-fluid {
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Image Header */
+.header_logo img {
+    min-height: 90px;
+    width: 265px;
+}
+
+/* navbar first */
+.navbar-first {
+    background: linear-gradient(100deg, #21409a 50%, #007cbd 100%);
+    border-radius: 4px;
+    line-height: 1.4;
+}
+
+.navbar-first .nav-link {
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.navbar-second {
+    background: #f0f0f0;
+    border-radius: 4px;
+    line-height: 1.4;
+}
+
+.navbar-second .nav-link {
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+
+/* artikel */
+.card {
+    border: 0px;
+}
+
+.artikel-sub .card-img-top {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+
+}
+
+.artikel-sub p{
+    font-weight: bold;
+}
+
+.artikel .card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.artikel .card-body {
+    background: linear-gradient(100deg, #21409a 50%, #007cbd 100%);
+    color: white;
+}
+
+/* sidemenu */
+.sidemenu {
+    font-weight: 600;
+    line-height: 1.3;
+    padding-left: 10px;
+}
+
+.sidemenu ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.sidemenu li:before {
+    content: "#";
+    padding-right: 5px;
+    margin-right: 3px;
+    color: grey;
+}
+
+.tag {
+    font-size: 18px;
+    font-weight: 600;
+    color: #083AA9;
+}
+
+.suara-pembaca {
+    background-color: #e3f5fe;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.btn-suara {
+    background-color: #ef672f;
+    border: #ef672f;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn-suara:hover {
+    background-color: #ef672f;
+}
+
+/* footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.footerInfo img {
+    width: 200px;
+    padding-bottom: 5px;
+}
+
+.sosmed p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.sosmed .fb {
+    font-size: 28px;
+    margin: 2px;
+}
+
+.footerMenu h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.footerMenu ul {
+    font-size: 12px;
+    color: #333333;
+    list-style-type: none;
+    padding: 0px;
+    font-weight: bold;
+}
