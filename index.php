@@ -11,68 +11,84 @@
 </head>
 
 <body>
+
+<nav class="navbar fixed-top bg-light">
+  <div class="container">
+    <div >
+     <button class="btn-crumb" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <span class="text-menu">MENU</span>
+    </div>
+  </div>
+</nav>
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  </div>
+</div>
+
+<!-- logo -->
   <div class="container">
     <div class="grid-row no-gutter flex-between">
       <div class="header_logo">
-        <a href="https://news.detik.com"><img src="https://akcdn.detik.net.id/community/media/visual/2020/09/17/logo-detiknews.png?d=1" title="DetikNews" alt="detikNews"></a>
+        <a href="https://news.detik.com"><img src="https://akcdn.detik.net.id/community/media/visual/2020/09/17/logo-detiknews.png?d=1" class="img-fluid" title="DetikNews" alt="detikNews"></a>
       </div>
     </div>
 
-    <nav class="navbar navbar-expand bg-light navbar-first">
-      <div class="container-fluid">
-        <a class="navbar-brand bg-light" href="#">
-          <img src="https://akcdn.detik.net.id/community/media/visual/2020/09/17/logo-detiknews.png?d=1" alt="Bootstrap" width="80" height="100%">
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Berita</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Jabotabek</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">International</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <nav class="navbar navbar-expand bg-light navbar-second">
-      <div class="container-fluid">
+    <ul class="nav navbar-first">
+      <li class="bg-light">
         <a class="navbar-brand" href="#">
-          <img src="https://akcdn.detik.net.id/community/media/visual/2020/09/17/logo-detiknews.png?d=1" alt="Bootstrap" width="80" height="100%">
+          <img src="https://akcdn.detik.net.id/community/media/visual/2020/09/17/logo-detiknews.png?d=1" alt="Bootstrap" width="100%" height="20px">
         </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">Home</a>
+      </li>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">Berita</a>
+      </li>
 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Berita</a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">Jabotabek</a>
+      </li>
 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Jabotabek</a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">International</a>
+      </li>
+    </ul>
 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">International</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <ul class="nav navbar-second">
+      <li class="bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="https://akcdn.detik.net.id/community/media/visual/2020/09/17/logo-detiknews.png?d=1" alt="Bootstrap" width="100%" height="20px">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">Berita</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">Jabotabek</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">International</a>
+      </li>
+    </ul>
+
+
     <!-- top rekomendasi -->
     <div class="row pt-3">
       <div class="col-sm-3">
@@ -123,7 +139,7 @@
               <div class="card-body">
                 <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit ?</h5>
                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus, architecto laboriosam possimus corrupti eos aliquid nemo quas voluptate iste!</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary btn-artikel">Read more <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -219,7 +235,7 @@
 
           <div class="col-sm-12 sticky-top">
             <h4 class="tag">Suara Pembaca</h4>
-            <div class="suara-pembaca ">
+            <div class="suara-pembaca">
               <p>Kirimkan tanggapan dan komentar Anda yang berkaitan dengan pelayanan publik dan keluhan konsumen.</p>
               <button class="btn btn-primary btn-sm btn-suara">Kirim Suara Anda <i class="fa-solid fa-arrow-right"></i></button>
             </div>
