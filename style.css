@@ -16,12 +16,13 @@ p {
     margin-left: auto;
 }
 
-.sticky-top{
-    top:56px;
+.sticky-top {
+    top: 56px;
 }
 
-.btn-crumb{
-    background-color: #244b9c;;
+.btn-crumb {
+    background-color: #244b9c;
+    ;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -29,19 +30,21 @@ p {
     border: 0px;
 }
 
-.text-menu{
+.text-menu {
     font-weight: bold;
     color: #5b5b5b;
     font-size: 16px;
 }
 
-.offcanvas.offcanvas-start{
-    top: 46px;
+.offcanvas.offcanvas-start {
+    top: 40px;
 }
 
 .offcanvas-backdrop {
-    background-color:rgba(0, 0, 0, 0.01);
+    top: 40px;
+    background-color: rgba(0, 0, 0, 0.01);
 }
+
 /* Image Header */
 .header_logo img {
     min-height: auto;
@@ -49,15 +52,18 @@ p {
 }
 
 /* navbar first */
-.navbar-first, .navbar-second{
+.navbar-first,
+.navbar-second {
     padding: 5px;
 }
-.navbar-brand{
+
+.navbar-brand {
     padding: 3px;
     display: block;
     margin: 0px;
     padding-right: 10px;
 }
+
 .navbar-first {
     background: linear-gradient(100deg, #21409a 50%, #007cbd 100%);
     border-radius: 4px;
@@ -68,10 +74,11 @@ p {
     border-radius: 4px;
 }
 
-.navbar-first .nav-link, .navbar-second .nav-link{
+.navbar-first .nav-link,
+.navbar-second .nav-link {
     font-size: 15px;
     font-weight: 600;
-    padding: 8px; 
+    padding: 8px;
 }
 
 .navbar-first .nav-link {
@@ -94,7 +101,7 @@ p {
 
 }
 
-.artikel-sub p{
+.artikel-sub p {
     font-weight: bold;
 }
 
@@ -109,11 +116,12 @@ p {
     color: white;
 }
 
-.artikel .card-title{
+.artikel .card-title {
     font-size: 22px;
     font-weight: bold;
 }
-.artikel .card-text{
+
+.artikel .card-text {
     color: whitesmoke;
 }
 
@@ -126,6 +134,7 @@ p {
 .btn-artikel:hover {
     background-color: #ef672f;
 }
+
 /* sidemenu */
 .sidemenu {
     font-weight: 600;
@@ -204,4 +213,50 @@ footer {
     list-style-type: none;
     padding: 0px;
     font-weight: bold;
+}
+
+/* hamburger */
+.hamburger-button {
+    position: relative;
+    transition: .3s ease-in-out;
+    width: 35px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.hamburger-button span {
+    position: absolute;
+    height: 2px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #3D4146;
+    top: 0;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.hamburger-button span:nth-child(1) {
+    top: 0px;
+}
+
+.hamburger-button span:nth-child(2),
+.hamburger-button span:nth-child(3) {
+    top: 10px;
+}
+
+.hamburger-button span:nth-child(4) {
+    top: 20px;
+}
+
+/* Style the active state and create the cross. */
+.hamburger-button.active span:nth-child(1),
+.hamburger-button.active span:nth-child(4) {
+    opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.hamburger-button.active span:nth-child(3) {
+    transform: rotate(-45deg);
 }
