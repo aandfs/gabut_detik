@@ -12,21 +12,26 @@
 
 <body>
 
-<nav class="navbar fixed-top bg-light">
-  <div class="container">
-    <div >
-     <button class="btn-crumb" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <span class="text-menu">MENU</span>
-    </div>
-  </div>
-</nav>
+  <nav class="navbar fixed-top bg-light">
+    <div class="container d-flex justify-content-start">
+      <a type="button" href="#" class="hamburger-button" class="btn-crumb" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
 
-<!-- offcanvas -->
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <span class="text-menu">MENU</span>
+      <!-- <button class="btn-crumb" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="fa-solid fa-bars"></i>
+      </button> -->
+    </div>
+  </nav>
+
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -34,7 +39,7 @@
   </div>
 </div>
 
-<!-- logo -->
+  <!-- logo -->
   <div class="container">
     <div class="grid-row no-gutter flex-between">
       <div class="header_logo">
@@ -246,6 +251,7 @@
     </div>
 
 
+
     <footer>
       <div class="row">
         <div class="col-sm-4 footerInfo text-center">
@@ -319,6 +325,8 @@
 
       </div>
     </footer>
+
+
   </div>
 
 
@@ -328,5 +336,21 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  $(function() {
+    $('.hamburger-button').on('click', function(event) {
+      event.preventDefault();
+      $(this).toggleClass('active');
+    });
+  });
+
+  $('.btn-close').on('click', function() {
+    $('.hamburger-button').removeClass('active');
+  });
+
+  
+</script>
 
 </html>
