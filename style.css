@@ -1,11 +1,7 @@
 body {
     font-size: 16px;
     font-family: Helvetica-FF, Arial, Tahoma, sans-serif;
-    padding-top: 56px;
-}
-
-p {
-    margin-bottom: 5px;
+    padding-top: 60px;
 }
 
 .container,
@@ -16,33 +12,12 @@ p {
     margin-left: auto;
 }
 
+p {
+    margin-bottom: 5px;
+}
+
 .sticky-top {
-    top: 56px;
-}
-
-.btn-crumb {
-    background-color: #244b9c;
-    ;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    color: white;
-    border: 0px;
-}
-
-.text-menu {
-    font-weight: bold;
-    color: #5b5b5b;
-    font-size: 16px;
-}
-
-.offcanvas.offcanvas-start {
-    top: 40px;
-}
-
-.offcanvas-backdrop {
-    top: 40px;
-    background-color: rgba(0, 0, 0, 0.01);
+    top: 60px;
 }
 
 /* Image Header */
@@ -51,7 +26,55 @@ p {
     width: 265px;
 }
 
-/* navbar first */
+/* main navbar */
+.navbar,
+.fixed-top {
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+
+.offcanvas.offcanvas-start {
+    top: 58px;
+}
+
+.offcanvas-backdrop {
+    top: 58px;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.text-menu {
+    font-weight: bold;
+    color: #5b5b5b;
+    font-size: 16px;
+    margin-left: 45px;
+}
+
+h3 {
+    text-decoration: none;
+}
+
+.btn-register {
+    background-color: #244B9C;
+    border: 3px solid #244B9C;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.btn-masuk {
+    background-color: transparent;
+    border: 3px solid #244B9C;
+    border-radius: 50px;
+    color: #244B9C;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* navbar first,second */
 .navbar-first,
 .navbar-second {
     padding: 5px;
@@ -65,7 +88,7 @@ p {
 }
 
 .navbar-first {
-    background: linear-gradient(100deg, #21409a 50%, #007cbd 100%);
+    background: linear-gradient(100deg, #21589a 50%, #007cbd 100%);
     border-radius: 4px;
 }
 
@@ -112,7 +135,7 @@ p {
 }
 
 .artikel .card-body {
-    background: linear-gradient(100deg, #21409a 50%, #007cbd 100%);
+    background: linear-gradient(100deg, #21589a 50%, #007cbd 100%);
     color: white;
 }
 
@@ -221,7 +244,11 @@ footer {
     transition: .3s ease-in-out;
     width: 35px;
     height: 20px;
-    margin-right: 10px;
+}
+
+.hamburger-button,
+a {
+    text-decoration: none;
 }
 
 .hamburger-button span {
@@ -231,7 +258,7 @@ footer {
     width: 100%;
     background-color: #3D4146;
     top: 0;
-    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    transition: transform .1s ease-in-out, opacity .1s ease-in-out;
 }
 
 .hamburger-button span:nth-child(1) {
