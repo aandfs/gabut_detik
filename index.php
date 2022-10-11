@@ -12,32 +12,36 @@
 
 <body>
 
-  <nav class="navbar fixed-top bg-light">
-    <div class="container d-flex justify-content-start">
-      <a type="button" href="#" class="hamburger-button" class="btn-crumb" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
+  <nav class="navbar fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="hamburger-button menu-t1">
+        <a type="button" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
 
-      <span class="text-menu">MENU</span>
-      <!-- <button class="btn-crumb" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-        <i class="fa-solid fa-bars"></i>
-      </button> -->
+          <h3 class="text-menu">MENU</h3>
+        </a>
+      </div>
+
+      <div class="menu-t2">
+        <button type="button" class="btn btn-primary btn-register">Register</button>
+        <button type="button" class="btn btn-primary btn-masuk">Masuk</button>
+      </div>
     </div>
   </nav>
 
   <!-- offcanvas -->
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Try scrolling the rest of the page to see this option in action.</p>
+    </div>
   </div>
-  <div class="offcanvas-body">
-    <p>Try scrolling the rest of the page to see this option in action.</p>
-  </div>
-</div>
 
   <!-- logo -->
   <div class="container">
@@ -343,14 +347,26 @@
     $('.hamburger-button').on('click', function(event) {
       event.preventDefault();
       $(this).toggleClass('active');
+      checkMenu = $('.text-menu').text();
+
+      $('div.offcanvas-backdrop.fade.show').on('click', function() {
+        $('.hamburger-button').removeClass('active');
+        $('.text-menu').text('MENU');
+      });
+
+      if (checkMenu == 'MENU') {
+        $('.text-menu').text('TUTUP');
+      } else {
+        $('.text-menu').text('MENU');
+      }
+
     });
   });
 
   $('.btn-close').on('click', function() {
     $('.hamburger-button').removeClass('active');
+    $('.text-menu').text('MENU');
   });
-
-  
 </script>
 
 </html>
