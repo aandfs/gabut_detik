@@ -20,6 +20,14 @@ p {
     top: 60px;
 }
 
+.text-isi{
+    text-align: justify;
+}
+.text-judul{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e5e5e5;
+}
 /* Image Header */
 .header_logo img {
     min-height: auto;
